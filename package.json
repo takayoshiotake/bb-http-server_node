@@ -1,0 +1,18 @@
+{
+  "name": "my-http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+
+    "debug": "node debug app.js",
+    "inspect": "node --inspect --debug-brk app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <h1>Test</h1>
+    ${template.process.version}
+    <ol>
+      <script type="text/javascript">
+        var args = ${template.args}
+        for (key in args) {
+          document.write(`<li>${key}=${JSON.stringify(args[key])}</li>`)
+        }
+      </script>
+    </ol>
+  </body>
+</html>
