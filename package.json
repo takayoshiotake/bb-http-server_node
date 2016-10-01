@@ -1,7 +1,7 @@
 {
-  "name": "my-http-server",
+  "name": "bb-http-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "http server",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,8 +9,12 @@
     "debug": "node debug app.js",
     "inspect": "node --inspect --debug-brk app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takayoshiotake/bb-http-server_node.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "takayoshiotake",
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.9.0"
