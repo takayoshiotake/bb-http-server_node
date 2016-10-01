@@ -21,6 +21,17 @@ http.createServer((req, res) => {
   var filepath = path.join(__dirname + '/public', parsed_url.pathname)
   try {
     if (fs.statSync(filepath).isDirectory()) {
+      if (filepath.slice(-1) != '/') {
+        if (parsed_url.query) {
+          res.writeHead(302, {'Location': parsed_url.pathname + '/?' + parsed_url.query})
+        }
+        else {
+          res.writeHead(302, {'Location': parsed_url.pathname + '/'})
+        }
+        res.end()
+        return
+      }
+
       var provisional = path.join(filepath, 'index.js')
       try {
         fs.accessSync(provisional, fs.constants.F_OK)
