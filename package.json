@@ -2,10 +2,9 @@
   "name": "bb-http-server",
   "version": "1.0.0",
   "description": "http server",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
-
     "debug": "node debug app.js",
     "inspect": "node --inspect --debug-brk app.js"
   },
