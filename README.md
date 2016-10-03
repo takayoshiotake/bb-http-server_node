@@ -21,12 +21,11 @@ USER ----------> http://host/<path>
 USER <---------- ./public/<path>  // if the path ends with ".js", the script file is operated.
 ```
 
-## Installtation
+## Demo
 
 ```bash
 $ git clone https://github.com/takayoshiotake/bb-http-server_node bb-http-server
 $ cd bb-http-server
-$ npm install
 $ npm start
 ```
 
