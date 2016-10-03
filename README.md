@@ -8,7 +8,7 @@
 )
 
 This is a simple HTTP server runs on nodejs.  
-Web contents such as "http://host/index.js", are operated as CGI on nodejs.
+Web contents such as "http://host/index.cgi.js", are operated as CGI on nodejs.
 
 Image
 
@@ -18,7 +18,7 @@ USER ----------> http://host/<path>
                   |
                   | map
        response   v
-USER <---------- ./public/<path>  // if the path ends with ".js", the script file is operated.
+USER <---------- ${dirname}/public/<path>  // if the path ends with ".cgi.js", the script file is operated.
 ```
 
 ## Demo
