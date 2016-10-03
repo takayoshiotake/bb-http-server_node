@@ -32,7 +32,7 @@ http.createServer((req, res) => {
         return
       }
 
-      var provisional = path.join(filepath, 'index.js')
+      var provisional = path.join(filepath, 'index.cgi.js')
       try {
         fs.accessSync(provisional, fs.constants.F_OK)
       }
@@ -60,7 +60,7 @@ http.createServer((req, res) => {
       res.end(content.data)
       return
     }
-    if (path.extname(filepath) == '.js') {
+    if (filepath.endsWith('.cgi.js')) {
       let args = {
         'script': filepath,
         'method': req.method,
