@@ -15,8 +15,5 @@
   },
   "keywords": [],
   "author": "takayoshiotake",
-  "license": "ISC",
-  "dependencies": {
-    "http-server": "^0.9.0"
-  }
+  "license": "ISC"
 }
