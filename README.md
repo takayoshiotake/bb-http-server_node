@@ -1,6 +1,6 @@
 # bb-http-server_node
 
-![version](http://img.shields.io/badge/ver.-0.0.1-blue.svg?style=flat
+![version](http://img.shields.io/badge/ver.-0.0.3-blue.svg?style=flat
 )
 ![node](http://img.shields.io/badge/node-v6.7.0-green.svg?style=flat
 )

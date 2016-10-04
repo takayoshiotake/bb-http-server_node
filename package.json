@@ -1,6 +1,6 @@
 {
   "name": "bb-http-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "http server",
   "main": "index.js",
   "scripts": {
